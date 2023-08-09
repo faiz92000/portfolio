@@ -9,8 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Confirmation de réception de votre message";
     $message = "Cher $name,\n\nVotre message a été reçu avec succès.\n\nMerci pour votre contact!\n\nCordialement,\nVotre équipe.";
 
-    $headers = "From: votre@email.com\r\n";
-    $headers .= "Reply-To: votre@email.com\r\n";
+    $headers = "From: faiz.ali.el@gmail.com\r\n";
+    $headers .= "Reply-To: faiz.ali.el@gmail.com\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
     if (mail($to, $subject, $message, $headers)) {
